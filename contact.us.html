@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>contact us</title>
+    <script src="confirmEmail.js"></script>
+</head>
+<body>
+<header id="location">
+    <h1><strong>contact us</strong></h1>
+</header>
+<nav>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="columbus.html">columbus</a></li>
+        <li><a href="Cleveland.html">Cleveland</a></li>
+        <li><a href="Cincinati.html">cincinati</a></li>
+        <li class="current"><a href="contact.us.html">contact us</a></li>
+    </ul>
+</nav>
+<form action="contact.us.html" method="POST" id="form" autocomplete="off">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="firstname" name="firstname" value="John"><br>
+    <label for="lastname">Last Name:</label><br>
+    <input type="text" id="lastname" name="lastname" value="Doe"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="YourEmail@example.com"><br>
+    <label for="confirmEmail">Confirm Email:</label><br>
+    <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Re-enter email"><br>
+    <label for="subject">Feedback/Questions?</label><br>
+    <input type="text" id="subject" name="subject" placeholder="Write Something..."><br><br>
+    <input type="submit" value="Submit" onclick="verifyEmail()">
+</form> 
+  
+</body>
+</html>
